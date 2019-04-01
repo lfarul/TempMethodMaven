@@ -9,7 +9,7 @@ public class Main {
         if (Temp > 0)
         
         {
-            System.out.println("Twoja temperatura to: " +  Temp + " stopni." + " " + "Temperatura jest dodatnia."); 
+            System.out.println("Twoja temperatura to: " +  Temp + " stopni." + " " + "Temperatura jest dodatnia. HUra idziemy się opalać."); 
         }
         
         else if (Temp < 0)

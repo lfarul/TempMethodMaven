@@ -15,7 +15,7 @@ public class Main {
         else if (Temp < 0)
 
         {
-            System.out.println("Twoja temperatura to: " + Temp + " stopni." + " " + "Temperatura jest ujemna.");
+            System.out.println("Twoja temperatura to: " + Temp + " stopni." + " " + "Temperatura jest ujemna. Hura idziemy na narty.");
         }
         
         else 

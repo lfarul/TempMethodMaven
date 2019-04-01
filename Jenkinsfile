@@ -1,7 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage("Compile") {
+    stage ("Checkout"){
+      steps {
+        git url: "https://github.com/lfarul/TempMethodMaven.git
+      }
+    }
+    stage ("Compile") {
       steps {
         sh "./mvnw compile"
       }

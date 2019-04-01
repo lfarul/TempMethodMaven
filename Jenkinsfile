@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("Checkout"){
       steps {
-        git url: "https://github.com/lfarul/TempMethodMaven.git
+        git url: "https://github.com/lfarul/TempMethodMaven.git"
       }
     }
     stage ("Compile") {

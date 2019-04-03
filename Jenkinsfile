@@ -17,7 +17,7 @@ pipeline {
       }
     }
     
-    stages {  
+    stage {  
       stage ('Deploy'){
         when {
           expression {

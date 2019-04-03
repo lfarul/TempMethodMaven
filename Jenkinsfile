@@ -15,7 +15,6 @@ pipeline {
       stage ('Build') {
         steps {
           sh 'make'
-          echo "Building"
       }
     }
     stages {
@@ -31,5 +30,6 @@ pipeline {
       }
     }
   }
- }
+}
+}
     

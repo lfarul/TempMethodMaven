@@ -11,14 +11,12 @@ pipeline {
         echo "Compiling"
       }
     }
-    stages {
-      stage ('Build') {
+     stage ('Build') {
         steps {
           sh 'make'
       }
     }
-    stages {
-      stage ('Deploy'){
+    stage ('Deploy'){
         when {
           expression {
             currentBuild.result == null || currentBuild.result == 'SUCCESS'
@@ -30,6 +28,6 @@ pipeline {
       }
     }
   }
-}
-}
+
+
     

@@ -1,20 +1,34 @@
 pipeline {
   agent any
   stages {
-    stage ("Checkout"){
+    stage ('Checkout'){
       steps {
         git url: "https://github.com/lfarul/TempMethodMaven.git"
       }
     }
-    stage ("Compile") {
+    stage ('Compile') {
       steps {
         echo "Compiling"
       }
     }
-    stage ("Build") {
-      steps {
-        echo "Building"
+    stages {
+      stage ('Build') {
+        steps {
+          sh 'make'
+          echo "Building"
+      }
+    }
+    stages {
+      stage ('Deploy'){
+        when {
+          expression {
+            currentBuild.result == null || currentBuild.result == 'SUCCESS'
+          }
+        }
+        steps {
+          sh 'make publish'
+        }
       }
     }
   }
-}
+    

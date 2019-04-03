@@ -16,7 +16,9 @@ pipeline {
           sh 'make'
       }
     }
-    stage ('Deploy'){
+    
+    stages {  
+      stage ('Deploy'){
         when {
           expression {
             currentBuild.result == null || currentBuild.result == 'SUCCESS'
@@ -25,6 +27,6 @@ pipeline {
       }
     }
   }
-
+}
 
     

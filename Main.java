@@ -26,7 +26,7 @@ public class Main
     
     public static void main(String[] args) {
         // wywoluje metode isPositive nadajac argumentowi Temp wartosc 10 
-        isPosi(10);
+        isPositi(10);
     
 }
 

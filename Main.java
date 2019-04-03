@@ -1,6 +1,5 @@
 package com.mycompany.maventempmethod;
 
-
 public class Main
     
     //definicja metody isPositive wraz z argumentem Temp typu int
@@ -27,7 +26,7 @@ public class Main
     
     public static void main(String[] args) {
         // wywoluje metode isPositive nadajac argumentowi Temp wartosc 10 
-        isPositive(10);
+        isPosi(10);
     
 }
 

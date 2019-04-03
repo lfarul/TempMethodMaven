@@ -20,7 +20,7 @@ public class Main
         
         else 
         {
-            System.out.println("Twoja temperatura to: " + Temp + " stopni." + " " + "Temperatura wynosi 0.");
+            System.out.println("Twoja temperatura to: " + Temp + " stopni." + " " + "Temperatura wynosi 0, więc nie jest tak źle.");
         }
         
     }
